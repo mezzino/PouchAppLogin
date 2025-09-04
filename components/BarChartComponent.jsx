@@ -1,6 +1,5 @@
 // BarChartComponent.jsx
-import React from 'react';
-import { Chart as Bar, ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
+import { Chart as Bar, BarElement, CategoryScale, ChartJS, Legend, LinearScale, Title, Tooltip } from 'chart.js';
 
 // Register the required Chart.js components
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
