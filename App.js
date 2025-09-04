@@ -26,8 +26,8 @@ async function fetchTableData() {
     const totalExpenses = data.reduce((sum, record) => sum + (record.Expenses || 0), 0);
     const ti = +totalIncome;  
     const te = +totalExpenses;
-    Alert.alert(`Total Income: ${totalIncome}\nTotal Expenses: ${totalExpenses}`);
-    Alert.alert(`Cash Flow: ${ti - te}`);
+    Alert.alert(`Total Income: ${totalIncome}\nTotal Expenses: ${totalExpenses}\nCash Flow: ${ti - te}`);
+  //  Alert.alert(`Cash Flow: ${ti - te}`);
     return data;
   }
 }
