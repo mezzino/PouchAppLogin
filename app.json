@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "PouchAppLogin",
+    "slug": "PouchAppLogin",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "pouchapplogin",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.michaelmezzino.PouchAppLogin"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.michaelmezzino.PouchAppLogin"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "SUPABASE_URL": "https://suongzkyqignmpqghlya.supabase.co",
+      "SUPABASE_ANON_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InN1b25nemt5cWlnbm1wcWdobHlhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTYzODcwMDIsImV4cCI6MjA3MTk2MzAwMn0.y_FJfLn4xYqo3fLtQ5N66sSXsWxhVBdizcZGS4nBlJg"
+    }
+  }
+}
