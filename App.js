@@ -27,7 +27,7 @@ async function fetchTableData() {
     const ti = +totalIncome;  
     const te = +totalExpenses;
     Alert.alert(`Total Income: ${totalIncome}\nTotal Expenses: ${totalExpenses}\nCash Flow: ${ti - te}`);
-  //  Alert.alert(`Cash Flow: ${ti - te}`);
+    Alert.alert(`Cash Flow: ${ti - te}`);
     return data;
   }
 }
