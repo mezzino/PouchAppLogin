@@ -3,6 +3,10 @@
     "name": "PouchAppLogin",
     "slug": "PouchAppLogin",
     "version": "1.0.0",
+    "extra": {
+      "SUPABASE_URL": "https://suongzkyqignmpqghlya.supabase.co",
+      "SUPABASE_ANON_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InN1b25nemt5cWlnbm1wcWdobHlhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTYzODcwMDIsImV4cCI6MjA3MTk2MzAwMn0.y_FJfLn4xYqo3fLtQ5N66sSXsWxhVBdizcZGS4nBlJg"
+    },
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "pouchapplogin",
@@ -39,10 +43,6 @@
     ],
     "experiments": {
       "typedRoutes": true
-    },
-    "extra": {
-      "SUPABASE_URL": "https://suongzkyqignmpqghlya.supabase.co",
-      "SUPABASE_ANON_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InN1b25nemt5cWlnbm1wcWdobHlhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTYzODcwMDIsImV4cCI6MjA3MTk2MzAwMn0.y_FJfLn4xYqo3fLtQ5N66sSXsWxhVBdizcZGS4nBlJg"
     }
   }
 }
