@@ -1,6 +1,5 @@
  // src/App.tsx
 import { Bar } from 'chart.js';
-import { Bar as BarChart } from 'react-chartjs-2';
 
    export default  function App() {
       const chartData = {
@@ -48,7 +47,6 @@ import { Bar as BarChart } from 'react-chartjs-2';
 
       return (
         <div style={{ width: '70%', margin: 'auto' }}>
-          <Bar data={chartData} options={chartOptions} />
         </div>
       );
     }
