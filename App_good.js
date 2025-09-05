@@ -4,24 +4,6 @@ import { Alert, Button, ImageBackground, StyleSheet, Text, TextInput, View } fro
 import bgImage from './assets/images/icon.png';
 import { supabase } from './lib/supabase';
 
-/*
-import React from 'react';
-import './styles.css'; // Optional: for basic styling
-import { BarChart } from './components/BarChart';
-import { userData } from './Data';
-
-function xApp() {
-  return (
-    <div className="App">
-      <h1>React Bar Chart Example</h1>
-      <div style={{ width: 700 }}>
-        <BarChart chartData={userData} />
-      </div>
-    </div>
-  );
-}
-*/
-
 export default function App() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
