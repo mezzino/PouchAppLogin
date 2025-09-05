@@ -2,7 +2,6 @@
 import { Bar } from 'chart.js';
 import { Bar as BarChart } from 'react-chartjs-2';
 
-
    export default  function App() {
       const chartData = {
         labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
