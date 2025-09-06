@@ -9,6 +9,17 @@ const CLOTHING = {
   naked: '',
   basic: '👕',
   fancy: '👔',
+  hoodie: '👘',
+  jacket: '🧥',
+  sweater: '🧶',
+  tshirt: '👕',
+  polo: '👔',
+  dress: '👗',
+  suit: '🤵',
+  uniform: '👮',
+  lab_coat: '🥼',
+  vest: '🦺',
+  tank_top: '🎽',
 };
 
 const ACCESSORIES = {

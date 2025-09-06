@@ -46,32 +46,6 @@ const DashboardScreen = ({ navigation }) => {
         </TouchableOpacity>
       </View>
 
-      {/* Budget Summary */}
-      <View style={styles.summaryContainer}>
-        <View style={styles.summaryCard}>
-          <Text style={styles.summaryLabel}>Income</Text>
-          <Text style={[styles.summaryValue, styles.incomeText]}>
-            ${budget.income?.toFixed(2) || '0.00'}
-          </Text>
-        </View>
-        
-        <View style={styles.summaryCard}>
-          <Text style={styles.summaryLabel}>Expenses</Text>
-          <Text style={[styles.summaryValue, styles.expenseText]}>
-            ${budget.expenses?.toFixed(2) || '0.00'}
-          </Text>
-        </View>
-        
-        <View style={[styles.summaryCard, styles.balanceCard]}>
-          <Text style={styles.summaryLabel}>Balance</Text>
-          <Text style={[
-            styles.summaryValue,
-            budget.balance >= 0 ? styles.incomeText : styles.expenseText
-          ]}>
-            ${budget.balance?.toFixed(2) || '0.00'}
-          </Text>
-        </View>
-      </View>
 
       {/* Koala Avatar */}
       <View style={styles.avatarContainer}>
