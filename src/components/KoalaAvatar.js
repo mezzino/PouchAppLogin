@@ -1,10 +1,9 @@
 import React from 'react';
-import { View, StyleSheet, Text } from 'react-native';
+import { Image, StyleSheet, Text, View } from 'react-native';
 import { useBudget } from '../contexts/BudgetContext';
 
-// In a real app, you would import actual image assets here
-// For now, we'll use emojis as placeholders
-const KOALA_BASE = '🐨';
+// Koala base image
+const KOALA_IMAGE = require('../../assets/images/icon.png');
 const CLOTHING = {
   naked: '',
   basic: '👕',
@@ -47,11 +46,15 @@ const KoalaAvatar = ({ size = 200 }) => {
     <View style={[styles.container, { width: containerSize, height: containerSize }]}>
       <View style={styles.avatarContainer}>
         {/* Base koala */}
-        <Text style={[styles.koala, { fontSize: size }]}>{KOALA_BASE}</Text>
+        <Image 
+          source={KOALA_IMAGE} 
+          style={[styles.koala, { width: size, height: size }]} 
+          resizeMode="contain"
+        />
         
         {/* Clothing (if any) */}
         {koalaState.clothing && (
-          <Text style={[styles.clothing, { fontSize: size * 0.8 }]}>
+          <Text style={[styles.clothing, { fontSize: size * 0.4 }]}>
             {CLOTHING[koalaState.clothing]}
           </Text>
         )}
@@ -94,15 +97,19 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     position: 'relative',
-    marginVertical: 20,
+    marginVertical: 1,
   },
   avatarContainer: {
     position: 'relative',
     alignItems: 'center',
     justifyContent: 'center',
   },
+  image:{
+    position: 'absolute',
+  },
   koala: {
     zIndex: 1,
+    position: 'relative',
   },
   clothing: {
     position: 'absolute',
@@ -113,13 +120,13 @@ const styles = StyleSheet.create({
     zIndex: 3,
   },
   mood: {
-    position: 'absolute',
-    top: -20,
-    right: -20,
+    position: 'relative',
+    top: -100,
+    right: -100,
     zIndex: 4,
   },
   levelContainer: {
-    marginTop: 10,
+    marginTop: -50,
     alignItems: 'center',
   },
   levelText: {
