@@ -54,7 +54,7 @@ const KoalaAvatar = ({ size = 200 }) => {
         
         {/* Clothing (if any) */}
         {koalaState.clothing && (
-          <Text style={[styles.clothing, { fontSize: size * 0.4 }]}>
+          <Text style={[styles.clothing, { fontSize: size * 0.3 }]}>
             {CLOTHING[koalaState.clothing]}
           </Text>
         )}
@@ -70,7 +70,7 @@ const KoalaAvatar = ({ size = 200 }) => {
         ))}
         
         {/* Mood indicator */}
-        <Text style={[styles.mood, { fontSize: size * 0.4 }]}>
+        <Text style={[styles.mood, { fontSize: size * 0.3}]}>
           {MOODS[koalaState.mood]}
         </Text>
       </View>
