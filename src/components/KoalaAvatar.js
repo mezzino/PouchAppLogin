@@ -58,17 +58,20 @@ const KoalaAvatar = ({ size = 200 }) => {
             {CLOTHING[koalaState.clothing]}
           </Text>
         )}
-        
+
         {/* Accessories */}
-        {activeAccessories.map((accessory, index) => (
-          <Text 
-            key={index} 
-            style={[styles.accessory, { fontSize: size * 0.5 }]}
-          >
-            {accessory}
+        {koalaState.accessories && (
+          <Text style={[styles.accessory, { fontSize: size * 0.3 }]}>
+          {ACCESSORIES[koalaState.accessories[0]]}
           </Text>
-        ))}
-        
+        )}
+
+        {koalaState.accessories.length > 1 && (
+          <Text style={[styles.accessory2, { fontSize: size * 0.35 }]}>
+          {ACCESSORIES[koalaState.accessories[1]]}
+          </Text>
+        )}
+
         {/* Mood indicator */}
         <Text style={[styles.mood, { fontSize: size * 0.3}]}>
           {MOODS[koalaState.mood]}
@@ -117,6 +120,14 @@ const styles = StyleSheet.create({
   },
   accessory: {
     position: 'absolute',
+    top: -25,
+    right: 37,
+    zIndex: 3,
+  },
+  accessory2: {
+    position: 'absolute',
+    top: 12,
+    right: 35,
     zIndex: 3,
   },
   mood: {

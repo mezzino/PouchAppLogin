@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect, useCallback, useMemo } from 'react';
+import React, { createContext, useCallback, useContext, useEffect, useMemo, useState } from 'react';
 import { supabase } from '../lib/supabase';
 
 const BudgetContext = createContext();
@@ -21,7 +21,7 @@ export const BudgetProvider = ({ children }) => {
     mood: 'neutral',
     // Level/XP system
     level: 1,
-    xp: 0,
+    xp: 200,
   });
 
 
@@ -73,7 +73,9 @@ export const BudgetProvider = ({ children }) => {
       if (newState.level >= 10 && !newState.accessories.includes('glasses')) {
         newState.accessories = [...newState.accessories, 'glasses'];
       }
-      
+         
+      newState.accessories = ['hat','glasses'];
+
       return newState;
     });
   }, [koalaState.xp]);
