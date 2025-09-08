@@ -174,8 +174,7 @@ const AppNavigator = () => {
         }}
       >
         {!session ? (
-          <Stack.Screen name="Login" component={LoginScreen} />
-        ) : (
+          <Stack.Screen name="Login" component={LoginScreen} />) : (
           <Stack.Screen name="MainTabs" component={MainTabs} />
         )}
         <Stack.Screen 

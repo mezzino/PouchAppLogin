@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
-import { View, Text, StyleSheet, ScrollView, TouchableOpacity, Alert } from 'react-native';
-import { useBudget } from '../contexts/BudgetContext';
+import { Alert, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import KoalaAvatar from '../components/KoalaAvatar';
+import { useBudget } from '../contexts/BudgetContext';
 import { supabase } from '../lib/supabase';
 
 const DashboardScreen = ({ navigation }) => {
@@ -31,7 +31,7 @@ const DashboardScreen = ({ navigation }) => {
     try {
       const { error } = await supabase.auth.signOut();
       if (error) throw error;
-      navigation.replace('Login');
+ //     navigation.replace('Login');
     } catch (error) {
       Alert.alert('Error', error.message);
     }

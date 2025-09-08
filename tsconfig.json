@@ -14,7 +14,7 @@
     "**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
-, "xApp.tsx"  ],
+, "xApp.tsx", "src/components/LoginScreen.js"  ],
    "exclude": [
     "node_modules/@types/babel__traverse"
   ]

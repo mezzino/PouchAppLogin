@@ -115,9 +115,8 @@ const LoginScreen = ({ navigation }) => {
               <Text style={styles.forgotPasswordText}>Forgot Password?</Text>
             </TouchableOpacity>
           </View>
-          
           <View style={styles.demoContainer}>
-            <Text style={styles.demoText}>Try the demo:</Text>
+           <Text style={styles.demoText}>Try the demo:</Text>
             <Text style={styles.demoCredentials}>Email: demo@example.com</Text>
             <Text style={styles.demoCredentials}>Password: demopassword</Text>
           </View>
