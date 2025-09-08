@@ -67,7 +67,7 @@ export const BudgetProvider = ({ children }) => {
       newState.xp = prevState.xp % 100;
 
       // Unlock new accessories at certain levels
-      if (newState.level >= 5 && !newState.accessories.includes('hat')) {
+      if (newState.level >= 3 && !newState.accessories.includes('hat')) {
         newState.accessories = [...newState.accessories, 'hat'];
       }
       if (newState.level >= 10 && !newState.accessories.includes('glasses')) {
