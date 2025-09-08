@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import { View, Text, StyleSheet, TextInput, TouchableOpacity, Alert, ScrollView } from 'react-native';
-import { useBudget } from '../contexts/BudgetContext';
 import { useNavigation, useRoute } from '@react-navigation/native';
+import React, { useState } from 'react';
+import { Alert, ScrollView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { useBudget } from '../contexts/BudgetContext';
 
 const AddTransactionScreen = () => {
   const [amount, setAmount] = useState('');
